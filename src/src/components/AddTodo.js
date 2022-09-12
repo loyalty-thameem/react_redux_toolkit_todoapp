@@ -15,6 +15,8 @@ const AddTodo = () => {
       [e.target.name]: e.target.value,
       [`${e.target.name}Error`]: null,
     });
+    console.log('stateFirst',[e.target.name]);
+    console.log('stateSecond',[`${e.target.name}Error`]);
   };
 
   const add = () => {
